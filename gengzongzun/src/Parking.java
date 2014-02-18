@@ -1,3 +1,4 @@
+package com.pingan.parking;
 import java.util.HashMap;
 import java.util.Map;
 
