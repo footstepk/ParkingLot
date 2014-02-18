@@ -1,4 +1,4 @@
-package src.java.com.pingan.parking;
+package java.com.pingan.parking;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,14 +19,14 @@ public class Parking {
         }
         return false;
     }
-    private boolean isFull(){
+    public boolean isFull(){
         return carMap.size() >= capacity;
     }
-    public boolean takeCar(String carNumber){
+    public Car takeCar(String carNumber){
         if(carMap.get(carNumber)!=null){
             carMap.remove(carNumber);
-            return true;
+            return new Car(carNumber);
         }
-        return false;
+        throw new  RuntimeException("No car is found!");
     }
 }

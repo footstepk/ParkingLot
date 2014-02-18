@@ -1,4 +1,4 @@
-package src.java.com.pingan.parking;
+package java.com.pingan.parking;
 
 public class Car {
     private String carNumber;
